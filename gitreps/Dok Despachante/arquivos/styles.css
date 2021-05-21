@@ -1,0 +1,433 @@
+html {
+    --default-header-padding: 5em;
+    --default-conatiner-padding: 10em;
+    --default-horizontal-margin: 1em;
+    --default-vertical-margin: 1em;
+    --default-red-color: #E12C30;
+    --default-chip-size: 3em;
+    --default-chip-panel-background-color: #F9F9F9;
+}
+
+body {
+    font-family: 'Open Sans';
+    margin: 0;
+}
+
+h1, h2 {
+    font-weight: 800;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-space-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-shrink {
+    flex-shrink: 2;
+}
+
+.flex-grow {
+    flex-grow: 2;
+}
+
+.caixa-form {
+    flex-direction: column;
+    justify-content: space-evenly;   
+}
+
+.caixa-form input {
+    border-radius: 10px;
+    border-style: none;
+    height: 4em;
+}
+
+.color-p {
+    color: #676767;
+} 
+
+.default-margin-right video {
+    width: 35em;
+    height: 18em;
+    background-color: black;
+}
+
+.formulario {
+    height: 22vw;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--default-red-color);
+}
+
+.video {
+    width: 28vw;
+    height: 15vw;
+}
+
+.botao {
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #12D01A 17.21%, #12D01A 78.69%);
+    border-radius: 30px;
+    text-align: center;  
+    height: min-content;
+}
+
+button {   
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 30px;
+    width: 36em;
+    height: 4em;
+    background: linear-gradient(90deg, #12D01A 17.21%, #12D01A 78.69%);
+}
+
+strong {
+    font-size: 1.2em;
+}
+
+#nome {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+/* #submit {
+    cursor: pointer;
+} */
+
+footer > .botao {
+    width: 50%;
+    margin: 0 auto;    
+}
+
+footer .botao > h2 {
+    padding: 0.5em 0;
+}
+
+.cabecalho > .botao {
+    width: 15em;
+}
+
+.slogan {
+    position: relative;
+    top: 10vw;
+    color: #CE282B;
+    font-size: 1.5vw;
+}
+
+.caixa {
+    background-color: #CE282B;
+}
+
+#login-form {
+    height: 60%;
+    width: 100%;
+}
+
+#login-form > input {
+    padding-left: 1em;
+}
+
+#caixa-login-form {
+    padding: 2em;
+    width: 30em;
+    border-radius: 24px;
+}   
+
+#caixa-login-form > .botao {
+    width: 100%;
+}
+
+#caixa-login-form > * {
+    margin: auto;
+}
+
+.default-vertical-margin {
+    margin: var(--default-vertical-margin) 0;
+}
+
+.default-margin-right {
+    margin-right: var(--default-horizontal-margin);
+}
+
+.default-margin-left {
+    margin-left: var(--default-horizontal-margin);
+}
+
+.default-padding {
+    padding: 1em;
+}
+
+.width-full {
+    width: 100%;
+}
+
+#header-div {
+    background-image: url('../assets/images/carros_avenida.png');
+    background-repeat:no-repeat;
+}
+
+.default-margin-horizontal {
+    margin: 0 var(--default-horizontal-margin);
+}
+
+.default-padding-bottom {
+    padding-bottom: calc(2 * var(--default-header-padding));
+}
+
+.default-padding-top {
+    padding-top: var(--default-header-padding);
+}
+
+.container-div-padding {
+    padding-left: var(--default-conatiner-padding);
+    padding-right: var(--default-conatiner-padding);
+}
+
+.icon-chip {
+    background-color: var(--default-red-color);    
+    height: var(--default-chip-size);
+    width: var(--default-chip-size);
+    border-radius: 100%;
+    padding: 1em;
+}
+
+.icon-chip-image {
+    height: var(--default-chip-size);
+    width: var(--default-chip-size);
+}
+
+.icon-chip-panel {
+    border-radius: 21px;
+    background-color: var(--default-chip-panel-background-color);
+    padding: 1em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-chip-panel > p {
+    width: 15em;
+}
+ 
+.icon-chip-panel div:first-child {
+    margin-right: var(--default-horizontal-margin);
+}
+
+.icon-chip-panel div:last-child {
+    margin-left: var(--default-horizontal-margin);
+}
+
+.flex > .icon-chip-panel {
+    margin: 1em;
+    flex-grow: 2;
+}
+
+.icon-chip-container {
+    line-height: 1.5vw;
+    font-size: 1vw;
+    width: 60vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.secao {
+    background-color: #E12C30;
+    color:#FFFFFF;
+    align-items: center;
+    font-size: 1.4vw;
+    height: 22em;
+}
+
+.normal-text {
+    font-weight: normal;
+    font-size: 2.5vw;
+    margin-top: -9px;
+}
+
+.text-bold {
+    font-size: 3.4vw;
+}
+
+.text-red {
+    color: #E12C30;
+}
+
+.primeira-secao {
+    font-size: 1.9375em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.text-second {
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: justify;
+    margin-left: 17px;
+}  
+
+.title {
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.title-final {
+    font-size: 2.1vw;
+    text-align: center;
+    color: #676767;
+}
+
+.botao {
+    cursor: pointer;
+}
+
+.input span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+@media screen and (max-width: 900px) and (min-width: 500px) {
+    h1, h2 {
+        text-align: center;
+    }
+
+    .slogan {
+        position: relative;  
+        top: 0vw;
+        right: 10vw;
+        font-size: 18px;
+    }
+
+    img {
+        height: 20em;
+    }
+
+    #header-div {
+        flex-direction: column-reverse;
+    }
+
+    .reponsive-botao-order-1 {
+        order: 1;
+    }
+
+    .default-padding-bottom {
+        padding-bottom: var(--default-header-padding);
+    }
+
+    #caixa-login-form {
+        width: 23em;
+        height: 15em;
+    }
+
+    .formulario {
+        height: 100%;
+    }
+
+    button {      
+        width: 100%;
+    }
+
+    .video {
+        width: 65vw;
+        height: 40vw;
+    }
+
+    .secao {
+        height: 0%;
+    }
+
+    .text-bold {
+        font-size: 4.4vw;
+    }
+
+    .normal-text {
+        font-size: 4.5vw;
+    }
+
+    .primeira-secao {
+        flex-direction: column;
+        padding-right: 0px;
+        padding-left: 0;
+        font-size: 20px;
+        align-items: center;    
+    }
+
+    .segunda-secao {
+        flex-direction: column;
+        padding-right: 0px;
+        padding-left: 0;
+        align-items: center; 
+    }
+
+    .text-second {
+        font-size: 21px;
+    }
+
+    .flex-responsive-element {
+        flex-direction: column;
+    }
+
+    .icon-chip-container {
+        line-height: 7vw;
+        font-size: 5vw;
+        width: 60vw;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }    
+
+    .icon-chip-panel {
+        flex-direction: column;
+    }
+
+    .icon-chip-panel > p {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .final {
+        line-height: 63px;
+    }
+
+    .title-final {
+        font-size: 33px;
+        text-align: center;
+    }
+     .botao {
+        font-size: 15px;
+     }
+
+}
